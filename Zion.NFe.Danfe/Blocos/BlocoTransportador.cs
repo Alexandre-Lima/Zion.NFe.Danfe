@@ -36,12 +36,12 @@ namespace Zion.NFe.Danfe.Blocos
             var l = (float)(LarguraCampoCodigoAntt + LarguraCampoPlacaVeiculo + LarguraCampoUf + LarguraCampoCnpj) / 3F;
 
             AdicionarLinhaCampos()
-                .ComCampoNumerico(Strings.Quantidade, transportadora.QuantidadeVolumes, 3)
+                .ComCampoNumerico(Strings.Quantidade, transportadora.QuantidadeVolumes, 0)
                 .ComCampo("Espécie", transportadora.Especie)
                 .ComCampo("Marca", transportadora.Marca)
                 .ComCampo("Numeração", transportadora.Numeracao)
-                .ComCampoNumerico("Peso Bruto", transportadora.PesoBruto, 3)
-                .ComCampoNumerico("Peso Líquido", transportadora.PesoLiquido, 3)
+                .ComCampoNumerico("Peso Bruto", transportadora.PesoBruto)
+                .ComCampoNumerico("Peso Líquido", transportadora.PesoLiquido)
                 .ComLarguras(20F / 200F * 100, 0, 0, l, l, l);
 
         }

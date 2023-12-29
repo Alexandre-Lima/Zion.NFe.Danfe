@@ -77,7 +77,7 @@ namespace Zion.NFe.Danfe.Blocos
                     p.OCst,
                     p.Cfop.Formatar("N0"),
                     p.Unidade,
-                    p.Quantidade.Formatar(),
+                    p.Quantidade.Formatar("#,0.000#"),
                     p.ValorUnitario.Formatar(),
                     p.ValorTotal.Formatar(),
                     p.BaseIcms.Formatar(),
